@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div(class='main-nav')
+      div(class='header-inner')
+        div(class='home-icon-nav nav-box')
+          a(href='/'): img(class='home-icon' src='images/Logo.png')
+        div(class='nav-links nav-box')
+          a(href='/') Dev projects
+          |
+          |
+          a(href='/') Other projects
+        //div(class='menu-items-nav nav-box')
+          ul
+            li(class='nav-item')
+              a(href='/dev') Dev Projects
+            li(class='nav-item')
+              a(href='/other') Other Projects
+    block content
+  footer
+    div(class='main-footer')
+      div(class='footer-inner')
+        a(href='https://twitter.com/mattricevans' target='_blank'): img(class='social-media-icon' src='images/Twitter round.png')
+        a(href='https://www.linkedin.com/in/matt-evans-93a63a127/' target='_blank'): img(class='social-media-icon' src='images/Linkedin round.png')
+        a(href='https://www.instagram.com/mattricevans/' target='_blank'): img(class='social-media-icon' src='images/Instagram round.png')
